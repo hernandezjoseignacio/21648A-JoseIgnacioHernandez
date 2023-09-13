@@ -1,0 +1,46 @@
+<%-include('partials/header')  %>
+<%-include('partials/navbar')  %>
+
+
+<div class="container border">
+    <div class="row mt-4">
+        <div class="col">
+            <h1 class="text-center text-decoration-underline">Modificar Publicación</h1>
+        </div>
+    </div>
+    <div class="row mt-3 col-md-5 mx-auto">
+
+        <form action="" id="modificar-publicacion">
+
+            <div class="mb-3">
+                <input type="text" class="form-control" id="titulo" placeholder="Ingrese el Título de la Publicación">
+            </div>
+            <div class="form-floating mb-3">
+                <textarea class="form-control" placeholder="Ingrese algún comentario al respecto de la Publicación" id="detalle"
+                    style="height: 100px"></textarea>
+                <label for="detalle">Detalle</label>
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" id="url_imagen" placeholder="Ingrese la URL de la imagen a Publicar">
+            </div>
+            <div class="mb-3">
+                <input type="date" class="form-control"  name="Fecha" id="fecha">
+            </div>
+
+            <div class="d-flex justify-content-end">
+                <button type="submit" class="btn btn-primary btn-sm mb-3">
+                    Modificar
+                </button>
+            </div>
+
+
+        </form>
+
+
+    </div>
+</div>
+
+
+<script src="/js/admin.js"></script>
+
+<%-include('partials/footer')  %>
