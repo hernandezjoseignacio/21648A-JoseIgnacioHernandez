@@ -72,19 +72,19 @@ ctrl.actualizarPublicacion = async (req, res) => {
 
 // Controlador para eliminar una publicación
 ctrl.eliminarPublicacion = async (req, res) => {
-    try {
-        const { id } = req.params;
-        const publicacion = await Publicacion.findByPk(id);
-        publicacion.remove();
-        return res.json({
-            msg: 'Publicación borrada con éxito!'
-        }) 
-    } catch (error) {
-        console.log(error.message)
-        return res.status(500).json({
-            msg: "Error al borrar la Publicación!"
-        })
-    }
+    // try {
+    //     const { id } = req.params;
+    //     const publicacion = await Publicacion.findByPk(id);
+    //     publicacion.remove();
+    //     return res.json({
+    //         msg: 'Publicación borrada con éxito!'
+    //     }) 
+    // } catch (error) {
+    //     console.log(error.message)
+    //     return res.status(500).json({
+    //         msg: "Error al borrar la Publicación!"
+    //     })
+    // }
 };
 
 
